@@ -1,12 +1,23 @@
 import Image from "next/image";
+import HeroSection from "../components/HeroSection";
+import Services from "../components/Services";
+import Testimonal from "../components/Testimonal";
+import AboutSection from "../components/AboutSection";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
-  console.log("What am i ")
+  console.log("What am i ");
 
   return (
     <>
-    <h1>Hello</h1>
-    {/* <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <HeroSection />
+      <Services />
+      <Testimonal />
+      <AboutSection />
+      <Contact />
+
+      {/* <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"

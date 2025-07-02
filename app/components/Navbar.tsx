@@ -1,6 +1,7 @@
-// components/Navbar.js
+"use client"; // required if using Next.js 13+ with app router
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -10,95 +11,39 @@ const navItems = [
   { href: "/contact", label: "Contact" },
 ];
 
-// const Navbar = () => {
-//   return (
-//     <nav className="fixed w-full dark:bg-black bg-neutral-50 bg-opacity-80 text-gold flex justify-center py-4 z-20">
-//       <ul className="flex space-x-6 text-lg font-semibold">
-//         {navItems.map((item) => (
-//           <li key={item.href}>
-//             <Link
-//               href={item.href}
-//               className="hover:text-white transition-colors"
-//             >
-//               {item.label}
-//             </Link>
-//           </li>
-//         ))}
-//       </ul>
-//     </nav>
-//   );
-// };
 const Navbar = () => {
-  //   document.documentElement.classList.toggle(
-  //     "dark",
-  //     localStorage.theme === "dark" ||
-  //       (!("theme" in localStorage) &&
-  //         window.matchMedia("(prefers-color-scheme: dark)").matches)
-  //   );
-
-  //   // Whenever the user explicitly chooses light mode
-  //   localStorage.theme = "light";
-  //   // Whenever the user explicitly chooses dark mode
-  //   localStorage.theme = "dark";
-  //   // Whenever the user explicitly chooses to respect the OS preference
-  //   localStorage.removeItem("theme");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-      <div className="fixed w-full bg-black shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 flex items-center">
-                <img
-                  src="/assets/logo.jpg"
-                  alt="InnovateTech company logo with abstract geometric design in blue and purple"
-                  className="h-8 w-8 rounded-full"
-                />
-                <span className="ml-2 text-xl font-bold text-gray-800 dark:text-amber-400">
-                  ZERAHAANS
-                </span>
-              </div>
+    <div className="fixed w-full bg-black bg-opacity-90 shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 items-center">
+          <div className="flex items-center">
+            <img
+              src="/assets/logo.jpg"
+              alt="Logo"
+              className="h-8 w-8 rounded-full"
+            />
+            <span className="ml-2 text-xl font-bold text-gold">ZERAHAANS</span>
+          </div>
+          <div className="flex">
+            {/* Desktop Menu */}
+            <div className="hidden md:flex space-x-4">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-neutral-50 hover:text-gold px-3 py-2 text-sm font-medium"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </div>
-            <div className="hidden md:ml-6 md:flex md:items-center md:space-x-8 text-gray-800">
-              <Link
-                href="#"
-                className=" dark:text-neutral-50 dark:hover:text-orange-300 px-3 py-2 text-sm font-medium"
-              >
-                Home
-              </Link>
-
-              <a
-                href="#"
-                className="text-gray-800 dark:text-neutral-50 dark:hover:text-orange-300 hover:text-orange-300 px-3 py-2 text-sm font-medium"
-              >
-                Services
-              </a>
-              <a
-                href="#"
-                className="text-gray-800 dark:text-neutral-50 dark:hover:text-orange-300 hover:text-orange-300 px-3 py-2 text-sm font-medium"
-              >
-                Skill Studio
-              </a>
-              <a
-                href="#"
-                className="text-gray-800 dark:text-neutral-50 dark:hover:text-orange-300 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-              >
-                About
-              </a>
-              <a
-                href="#"
-                className="text-gray-800 dark:text-neutral-50 dark:hover:text-orange-300 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-              >
-                Contact
-              </a>
-            </div>
-            <div className="flex items-center">
-              <button
-                id="themeToggle"
-                className="p-2 rounded-full focus:outline-none"
-              >
+            <div className="flex">
+              {/* Theme Toggle */}
+              <button className="p-2 rounded-full focus:outline-none">
                 <svg
-                  className="w-6 h-6 text-gray-800 dark:text-gray-200"
+                  className="w-6 h-6 text-gray-200"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -111,35 +56,52 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
-            </div>
-            <div className="-mr-2 flex items-center md:hidden">
-              <button
-                type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
+              {/* Mobile Hamburger */}
+              <div className="md:hidden flex items-center">
+                <button
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className="text-gray-200 p-2 rounded-md focus:outline-none"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d={
+                        isMenuOpen
+                          ? "M6 18L18 6M6 6l12 12"
+                          : "M4 6h16M4 12h16M4 18h16"
+                      }
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden px-4 pb-4 pt-2 space-y-1 bg-neutral-900 shadow">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="block text-neutral-50  hover:text-orange-300 dark:hover:text-orange-300 px-3 py-2 rounded-md text-base font-medium"
+              onClick={() => setIsMenuOpen(false)} // auto-close on click
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 };
 
