@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+
 import HeroSection from "../components/HeroSection";
 import Services from "../components/Services";
 import Testimonal from "../components/Testimonal";

@@ -15,7 +15,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="fixed w-full bg-black bg-opacity-90 shadow-md z-50">
+    <div className="navbar  border-stroke-dark top-0 left-0 z-50 w-full fixed border-b backdrop-blur-xs bg-gray-950/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
@@ -28,12 +28,12 @@ const Navbar = () => {
           </div>
           <div className="flex">
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-4">
+            <div className="hidden md:flex space-x-4 transition-all duration-900">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-neutral-50 hover:text-gold px-3 py-2 text-sm font-medium"
+                  className="text-neutral-50 hover:text-gold px-3 py-2 text-sm font-medium no-underline transition-all duration-450"
                 >
                   {item.label}
                 </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
               {/* Theme Toggle */}
               <button className="p-2 rounded-full focus:outline-none">
                 <svg
-                  className="w-6 h-6 text-gray-200"
+                  className="w-6 h-6 text-gray-800 dark:text-gray-200"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -60,7 +60,7 @@ const Navbar = () => {
               <div className="md:hidden flex items-center">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="text-gray-200 p-2 rounded-md focus:outline-none"
+                  className="text-gray-800 dark:text-gray-200 p-2 rounded-md focus:outline-none"
                 >
                   <svg
                     className="h-6 w-6"

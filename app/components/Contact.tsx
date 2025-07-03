@@ -73,17 +73,17 @@ const contactDetails = {
 
 const Contact = () => {
   return (
-    <div id="contact" className="py-10 bg-gray-50 dark:bg-gray-900">
+    <div id="contact" className="py-10">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="lg:text-center mb-12">
-          <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">
+          <h2 className="text-base text-gold font-semibold tracking-wide uppercase">
             {contactDetails.title}
           </h2>
           <br />
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-neutral-50 sm:text-4xl">
             {contactDetails.subTitle}
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-neutral-50  lg:mx-auto">
             {contactDetails.content}
           </p>
         </div>
@@ -98,12 +98,12 @@ const Contact = () => {
                     id="name"
                     name="name"
                     placeholder=" "
-                    className="form-input w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="form-input w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-gold"
                     required
                   />
                   <label
                     htmlFor="name"
-                    className="floating-label absolute left-4 top-2 text-gray-500 pointer-events-none"
+                    className="floating-label absolute left-4 top-2 text-gray-500 dark:text-gray-300 pointer-events-none"
                   >
                     Full Name
                   </label>
@@ -115,12 +115,12 @@ const Contact = () => {
                     id="email"
                     name="email"
                     placeholder=" "
-                    className="form-input w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="form-input w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-gold"
                     required
                   />
                   <label
                     htmlFor="email"
-                    className="floating-label absolute left-4 top-2 text-gray-500 pointer-events-none"
+                    className="floating-label absolute left-4 top-2 text-gray-500 dark:text-gray-300 pointer-events-none"
                   >
                     Email Address
                   </label>
@@ -132,12 +132,12 @@ const Contact = () => {
                     id="phone"
                     name="phone"
                     placeholder=" "
-                    className="form-input w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="form-input w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-gold"
                     required
                   />
                   <label
                     htmlFor="phone"
-                    className="floating-label absolute left-4 top-2 text-gray-500 pointer-events-none"
+                    className="floating-label absolute left-4 top-2 text-gray-500 dark:text-gray-300 pointer-events-none"
                   >
                     Phone Number
                   </label>
@@ -147,7 +147,7 @@ const Contact = () => {
                   <select
                     id="service"
                     name="service"
-                    className="form-input w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="form-input w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-gold"
                     required
                   >
                     <option defaultValue=" "></option>
@@ -159,7 +159,7 @@ const Contact = () => {
                   </select>
                   <label
                     htmlFor="service"
-                    className="floating-label absolute left-4 top-2 text-gray-500 pointer-events-none"
+                    className="floating-label absolute left-4 top-2 text-gray-500 dark:text-gray-300 pointer-events-none"
                   >
                     Service Needed
                   </label>
@@ -172,12 +172,12 @@ const Contact = () => {
                     aria-rowcount={4}
                     // rows="4"
                     placeholder=" "
-                    className="form-input w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="form-input w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-gold"
                     required
                   ></textarea>
                   <label
                     htmlFor="message"
-                    className="floating-label absolute left-4 top-2 text-gray-500 pointer-events-none"
+                    className="floating-label absolute left-4 top-2 text-gray-500 dark:text-gray-300 pointer-events-none"
                   >
                     Project Details
                   </label>
@@ -186,7 +186,7 @@ const Contact = () => {
                 <div>
                   <button
                     type="submit"
-                    className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-black dark:text-white dark:bg-   bg-gold hover:bg-dark-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                    className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold dark:text-black text-white bg-black dark:bg-gold hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
                   >
                     Submit Inquiry
                   </button>
@@ -194,7 +194,7 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="bg-black dark:bg-gold text-white p-8">
+            <div className="bg-black dark:bg-gold text-gold dark:text-black p-8">
               <h3 className="text-xl font-bold mb-6">Contact Information</h3>
 
               <div className="flex items-start mb-6">
@@ -221,8 +221,12 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <p className="text-blue-100">123 Tech Street</p>
-                  <p className="text-blue-100">San Francisco, CA 94107</p>
+                  <p className="text-gray-50 dark:text-gray-900">
+                    123 Tech Street
+                  </p>
+                  <p className="text-gray-50 dark:text-gray-900">
+                    San Francisco, CA 94107
+                  </p>
                 </div>
               </div>
 
@@ -244,7 +248,9 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <p className="text-blue-100">+1 (555) 123-4567</p>
+                  <p className="text-gray-50 dark:text-gray-900">
+                    +1 (555) 123-4567
+                  </p>
                 </div>
               </div>
 
@@ -266,17 +272,19 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <p className="text-blue-100">info@innovatetech.com</p>
+                  <p className="text-gray-50 dark:text-gray-900">
+                    info@innovatetech.com
+                  </p>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h4 className="text-lg font-medium mb-4">Follow Us</h4>
+                <h4 className="text-lg font-bold mb-4">Follow Us</h4>
                 <div className="flex space-x-4">
                   {contactDetails.socialAccount.accounts.map((a, i) => (
                     <a
                       href="#"
-                      className="text-blue-200 hover:text-gold"
+                      className="text-gray-50 dark:text-gray-950 dark:hover:text-gold"
                       key={i}
                     >
                       <svg

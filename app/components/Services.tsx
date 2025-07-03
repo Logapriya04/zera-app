@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 
 const services = {
   title: "Services",
@@ -10,11 +10,17 @@ const services = {
       logo: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
       content:
         "Custom websites and web applications built with modern technologies.",
+      WebTitle: "Techsphere",
     },
     {
-      title: "Cloud Solutions",
-      logo: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
+      title: "Workforce Outsourcing",
+      logo: "M23 21v-2a4 4 0 0 0-3-3.87",
       content: "Scalable cloud infrastructure and deployment strategies.",
+    },
+    {
+      title: "Mobile Apps",
+      logo: "M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z",
+      content: "Cross-platform mobile applications for iOS and Android.",
     },
     {
       title: "Mobile Apps",
@@ -26,12 +32,12 @@ const services = {
 
 const Services = () => {
   return (
-    <div className="py-12  dark:bg-black">
+    <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          {/* <h2 className="text-base text-white dark:text-gold font-semibold tracking-wide uppercase">
+          <h2 className="text-base text-white dark:text-gold font-semibold tracking-wide uppercase">
             {services.title}
-          </h2> */}
+          </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-neutral-50 sm:text-4xl">
             {services.subTitle}
           </p>

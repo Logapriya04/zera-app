@@ -7,6 +7,7 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log("whose navbar");
   return (
     <main className="font-work-sans">
       {/* <Navbar /> */}
