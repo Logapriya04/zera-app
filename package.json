@@ -13,6 +13,7 @@
     "@headlessui/react": "^2.2.4",
     "@react-three/drei": "^10.4.2",
     "@react-three/fiber": "^9.1.4",
+    "framer-motion": "^12.23.3",
     "next": "15.3.4",
     "next-auth": "^5.0.0-beta.29",
     "react": "^19.0.0",

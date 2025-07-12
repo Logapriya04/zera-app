@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const contactDetails = {
@@ -169,8 +170,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    aria-rowcount={4}
-                    // rows="4"
+                    rows={4}
                     placeholder=" "
                     className="form-input w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-gold"
                     required

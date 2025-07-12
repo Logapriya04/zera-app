@@ -7,15 +7,23 @@ const navItems = [
 ];
 
 const HeroItems = {
-  heading: "Digital Solutions for Modern Businesses",
+  // heading: "Digital Solutions for Modern Businesses",
+  // Tailored solutions bridging corporate needs and individual growth since 2020.
+  heading: "Empowering Growth",
+  headColored: "Through Innovation",
   content:
     "We help startups and enterprises build innovative digital products that drive growth and customer satisfaction.",
   contactBtn: "Get in Touch",
 };
 
 const skillZ = {
-  learning : ["Programming", "IT", "Engineering & Design", "business & Management"]
-}
+  learning: [
+    "Programming",
+    "IT",
+    "Engineering & Design",
+    "business & Management",
+  ],
+};
 
 const AboutZera = {
   title: "About Zerahaans",
@@ -151,4 +159,15 @@ const footerData = {
       link: "",
     },
   ],
+};
+
+export default {
+  navItems,
+  HeroItems,
+  skillZ,
+  AboutZera,
+  services,
+  testimonals,
+  contactDetails,
+  footerData,
 };

@@ -1,9 +1,9 @@
+"use client";
 import React from "react";
+import AboutSection from "../components/AboutSection";
 
 const page = () => {
-  return <div>
-    <p className="mt-3">About page</p>
-  </div>;
+  return <AboutSection />;
 };
 
 export default page;

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 const testimonals = {
   title: "Testimonials",
@@ -30,9 +30,9 @@ const Testimonal = () => {
           {testimonals.testimonal.map((t, i) => (
             <div className="bg-gray-300 p-6 rounded-lg" key={i}>
               <div className="flex items-center">
-                <img
-                  src={t.profile}
-                  alt={`Portrait of ${t.name}, ${t.designation}`}
+                <div
+                  // src={t.profile}
+                  // alt={`Portrait of ${t.name}, ${t.designation}`}
                   className="h-12 w-12 rounded-full"
                 />
                 <div className="ml-4">

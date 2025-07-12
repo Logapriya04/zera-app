@@ -1,5 +1,5 @@
 // components/HolographicButton.js
-
+"use client"
 const HolographicButton = () => {
   return (
     <button className="relative w-72 h-16 bg-gray-900 rounded-lg overflow-hidden flex justify-center items-center transition-transform duration-500 hover:scale-105 hover:shadow-xl/20 hover:shadow-yellow-400 group">
