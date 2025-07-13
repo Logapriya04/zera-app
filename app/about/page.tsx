@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import AboutSection from "../components/AboutSection";
+import AboutSection from "../container/AboutSection";
 
 const page = () => {
   return <AboutSection />;

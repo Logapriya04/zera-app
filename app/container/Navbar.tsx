@@ -4,14 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import db from "../api/db";
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/skill-studio", label: "Skill Studio" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-];
+const navLinks = db.navLinks;
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -44,7 +39,7 @@ const Navbar = () => {
                     href={item.href}
                     className={`mx-4 px-2 py-1 hover:text-gold transition-colors ${
                       pathname === item.href
-                        ? "text-primary font-bold border-b-2 border-gold"
+                        ? " font-bold border-b-2 border-gold"
                         : "text-gray-300 "
                     }`}
                     // className="border-transparent text-neutral-50 hover:border-gold hover:text-gold px-3 py-2 active:text-gold text-sm font-medium border-b-2 no-underline transition-all duration-450"

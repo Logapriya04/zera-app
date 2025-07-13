@@ -1,122 +1,12 @@
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/skill-studio", label: "Skill Studio" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-];
-
-const HeroItems = {
-  // heading: "Digital Solutions for Modern Businesses",
-  // Tailored solutions bridging corporate needs and individual growth since 2020.
-  heading: "Empowering Growth",
-  headColored: "Through Innovation",
-  content:
-    "We help startups and enterprises build innovative digital products that drive growth and customer satisfaction.",
-  contactBtn: "Get in Touch",
-};
-
-const skillZ = {
-  learning: [
-    "Programming",
-    "IT",
-    "Engineering & Design",
-    "business & Management",
-  ],
-};
-
-const AboutZera = {
-  title: "About Zerahaans",
-  content:
-    "Founded in 2020, Zerahaans is a forward-driven company committed to delivering innovative solutions across education, technology, and business services.",
-};
-
-const services = {
-  title: "Services",
-  subTitle: "What We Offer",
-  content: "Comprehensive digital solutions tailored to your business needs.",
-  features: [
-    {
-      title: "Web Development",
-      logo: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
-      content:
-        "Custom websites and web applications built with modern technologies.",
-    },
-    {
-      title: "Workforce Outsourcing",
-      logo: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
-      content: "Scalable cloud infrastructure and deployment strategies.",
-    },
-    {
-      title: "Mobile Apps",
-      logo: "M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z",
-      content: "Cross-platform mobile applications for iOS and Android.",
-    },
-  ],
-};
-
-const testimonals = {
-  title: "Testimonials",
-  subTitle: "What Our Clients Say",
-  testimonal: [
-    {
-      profile:
-        "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6edd6cdb-5c04-4b64-936b-4edf383b3aac.png",
-      name: "Sarah Johnson",
-      designation: "Marketing Director, TechCorp",
-      info: "InnovateTech transformed our digital presence with their web development expertise. Our traffic has increased by 300% since launch.",
-    },
-  ],
-};
-
-const contactDetails = {
-  title: "Contact US",
-  subTitle: "Get in Touch",
-  content: "Have a project in mind? We'd love to hear from you.",
-  FormData: [
-    {
-      type: "text",
-      data: "name",
-      label: "Full Name",
-    },
-    {
-      type: "email",
-      data: "email",
-      label: "Email Address",
-    },
-    {
-      type: "tel",
-      data: "phone",
-      label: "Phone Number",
-    },
-    {
-      type: "dropDown",
-      data: "services",
-      options: [
-        "Web Development",
-        "Internship",
-        "Online courses",
-        "Consulting",
-        "trading",
-        "Other",
-      ],
-      label: "Service Needed",
-    },
-    {
-      type: "textarea",
-      data: "message",
-      label: "Project Details",
-    },
-    {
-      type: "button",
-      data: "Submit Inquiry",
-    },
-  ],
+const website = {
+  title: "Zerahaans - Empowering Growth Through Innovation",
+  logo_path: "",
+  name: "ZERAHAANS",
   address: {
     title: "Contact Information",
     location: "Neyveli",
-    phoneNumber: "",
-    emailId: "",
+    phoneNumber: "+91 7397323503",
+    emailId: "info@zerahaans.com",
   },
   socialAccount: {
     title: "Follow Us",
@@ -140,11 +30,277 @@ const contactDetails = {
   },
 };
 
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#services", label: "Services" },
+  { href: "#skillZ", label: "SkillZ" },
+  { href: "#contact", label: "Contact" },
+];
+
+const HeroItems = {
+  // heading: "Digital Solutions for Modern Businesses",
+  // Tailored solutions bridging corporate needs and individual growth since 2020.
+  heading: "Empowering Growth",
+  headColored: "Through Innovation",
+  content:
+    "We help startups and enterprises build innovative digital products that drive growth and customer satisfaction.",
+};
+
+const clients = {
+  title: "Trusted by leading organzations",
+  logos: [
+    {
+      name: "",
+      path: "",
+    },
+  ],
+};
+
+const AboutZera = {
+  title: "About Zerahaans",
+  subtitle: "Bridging the gap between corporate needs and individual growth",
+  content:
+    "Founded in 2020, Zerahaans emerged with a clear vision to empower businesses and individuals alike.",
+  about: [
+    {
+      title: "Our Journey",
+      content:
+        "Our journey began by assisting businesses in completing their \
+         projects efficiently and providing training to individuals eager \
+          to enhance their skills. We take pride in being a company that \
+          people love to work with, building lasting relationships with our \
+           clients and partners.",
+    },
+    {
+      title: "Our Mission",
+      content:
+        "To empower businesses and individuals alike by delivering tailored \
+         solutions that cater to the unique challenges of each client and by \
+         offering training programs that equip individuals with the skills \
+          needed to thrive in today's dynamic environment.",
+    },
+  ],
+  image: {
+    name: "work together",
+    path: "",
+  },
+};
+
+const values = {
+  title: "Our Values",
+  subTitle: "Principles that guide everything we do",
+  content: [
+    {
+      title: "Innovation",
+      logo: "M13 10V3L4 14h7v7l9-11h-7z",
+      content:
+        "Continuously evolving our methods to deliver cutting-edge solutions that drive meaningful impact.",
+    },
+    {
+      title: "Integrity",
+      logo: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+      content:
+        "Maintaining honesty and transparency in all our interactions and business practices.",
+    },
+    {
+      title: "Collaboration",
+      logo: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a3 3 0 11-6 0 3 3 0 016 0zM7 10a3 3 0 11-6 0 3 3 0 016 0z",
+      content:
+        "Fostering partnerships where shared knowledge leads to greater achievements together.",
+    },
+  ],
+};
+
+const services = {
+  title: "Services",
+  subTitle: "Comprehensive solutions for your business and team",
+  content:
+    "We offer a range of services designed to meet diverse organizational and individual needs.",
+  service: [
+    {
+      title: "Web Development",
+      logo: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
+      content:
+        "Responsive, custom websites and web applications tailored to your specific business requirements.",
+      points: [
+        "Custom website design",
+        "Responsive development",
+        "Web application development",
+      ],
+    },
+    {
+      title: "Project Resourcing",
+      logo: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
+      content:
+        "Expert tech teams on demand to complete your projects with efficiency and excellence.",
+      points: [
+        "Dedicated development teams",
+        "Project augmentation",
+        "Technical expertise on demand",
+      ],
+    },
+    {
+      title: "Student Internships",
+      logo: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+      content:
+        "Real-world projects, mentorship & certifications to launch careers in technology.",
+      points: [
+        "Hands-on experience",
+        "Industry mentorship",
+        "Professional certifications",
+      ],
+    },
+    {
+      title: "Technical Training",
+      logo: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
+      content:
+        "From web basics to advanced frameworks, we offer comprehensive IT training programs.",
+      points: [
+        "Web development fundamentals",
+        "Advanced framework training",
+        "Corporate IT training",
+      ],
+    },
+    {
+      title: "Entrepreneurship",
+      logo: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
+      content:
+        "Comprehensive support for startup planning, finance, compliance & leadership.",
+      points: ["Business planning", "Financial management", "Legal compliance"],
+    },
+    {
+      title: "Trading & Investment",
+      logo: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
+      content:
+        "Market analysis, portfolio building, simulations, and mentorship for financial success.",
+      points: [
+        "Market analysis techniques",
+        "Portfolio building strategies",
+        "Real-world simulations",
+      ],
+    },
+  ],
+};
+
+const testimonals = {
+  title: "Testimonials",
+  subTitle: "What Our Clients Say",
+  testimonal: [
+    {
+      profile:
+        "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6edd6cdb-5c04-4b64-936b-4edf383b3aac.png",
+      name: "Sarah Johnson",
+      designation: "Marketing Director, TechCorp",
+      info: '"Zerahaans transformed our digital presence with their custom web \
+              solutions. Their team\'s expertise and dedication were evident \
+              throughout the project."',
+    },
+    {
+      profile:
+        "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6edd6cdb-5c04-4b64-936b-4edf383b3aac.png",
+      name: "Sarah Johnson",
+      designation: "Director of Innovation, Global Financep",
+      info: '"The training programs provided by Zerahaans have been \
+              instrumental in upskilling our teams. The practical approach and \
+              real-world examples made all the difference."',
+    },
+  ],
+};
+
+const teams = {
+  title: "Out Team",
+  subtitle: "Meet the experts behind Zerahaans",
+  team: [
+    {
+      name: "Daniel",
+      profile: "",
+      designation: "Founder & CEO",
+      vision:
+        '"Our mission is to create meaningful impact through \
+                technology and education."',
+    },
+    {
+      name: "..",
+      profile: "",
+      designation: "Chief Technology Officer",
+      vision:
+        '"Technology should solve real problems and create \
+                  opportunities for growth."',
+    },
+    {
+      name: "..",
+      profile: "",
+      designation: "Head of Training",
+      vision:
+        '"Empowering individuals through education is the most \
+                  rewarding work."',
+    },
+  ],
+};
+
+const cta = {
+  title: "Ready to transform your business?",
+  subtitle:
+    "Contact us today to discuss how Zerahaans \
+   can help you achieve yourgoals.",
+};
+
+const contactDetails = {
+  title: "Contact US",
+  subTitle: "Get in Touch",
+  content:
+    "Have questions about our services or want to discuss a project?\
+              Fill out the form and our team will get back to you as soon as\
+              possible.",
+
+  FormData: [
+    {
+      type: "text",
+      data: "name",
+      label: "Full Name",
+    },
+    {
+      type: "email",
+      data: "email",
+      label: "Email Address",
+    },
+    {
+      type: "tel",
+      data: "phone",
+      label: "Phone Number",
+    },
+    {
+      type: "dropDown",
+      data: "service",
+      options: [
+        "Web Development",
+        "Project Resourcing",
+        "Student Internships",
+        "Technical Training",
+        "Entrepreneurship",
+        "Trading & Investment",
+        "Other",
+      ],
+      label: "Service Needed",
+    },
+    {
+      type: "textarea",
+      data: "message",
+      label: "Project Details",
+    },
+    {
+      type: "button",
+      data: "Submit Inquiry",
+    },
+  ],
+};
+
 const footerData = {
   title: "Zerahaans Enterprises",
-  content:
-    "Digital solutions for modern businesses. Helping you navigate the digital landscape with innovative technology.",
-  quickLinks: ["Home", "Services", "About us", "Contact"],
+  logo: "",
+  content: "Bridging corporate needs and individual growth since 2020.",
+  quickLinks: ["Home", "About us", "Team", "Careers", "Blog", "Contact"],
   Legal: [
     {
       title: "Privacy Policy",
@@ -161,13 +317,27 @@ const footerData = {
   ],
 };
 
+const skillZ = {
+  learning: [
+    "Programming",
+    "IT",
+    "Engineering & Design",
+    "business & Management",
+  ],
+};
+
 export default {
-  navItems,
+  website,
+  navLinks,
   HeroItems,
-  skillZ,
+  clients,
   AboutZera,
+  values,
+  teams,
   services,
   testimonals,
+  cta,
   contactDetails,
   footerData,
+  skillZ,
 };

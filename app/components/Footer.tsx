@@ -63,7 +63,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-700">
           <p className="text-gray-400 text-center">
-            © 2023 InnovateTech. All rights reserved.
+            © 2023 Zerahaans. All rights reserved.
           </p>
         </div>
       </div>

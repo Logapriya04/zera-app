@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // import { Poppins, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./container/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
