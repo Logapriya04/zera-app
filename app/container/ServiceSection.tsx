@@ -6,7 +6,7 @@ const services = db.services;
 const Services = () => {
   return (
     <>
-      <section id="services" className="py-20 bg-gray-50 dark:bg-neutral-600">
+      <section id="services" className="py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center mb-16">
             <h2 className="text-base text-gold font-semibold tracking-wide uppercase">
@@ -24,11 +24,11 @@ const Services = () => {
             {services.service.map((d, k) => (
               <div
                 key={k}
-                className="service-card bg-white dark:bg-dark rounded-lg shadow-md overflow-hidden transition-all duration-300"
+                className="service-card bg-gray-200 dark:bg-dark rounded-lg shadow-md overflow-hidden transition-all duration-300"
               >
                 <div className="p-6">
                   <div className="flex items-center mb-4">
-                    <div className="flex-shrink-0 bg-gray-200 p-3 rounded-md text-stone-950">
+                    <div className="flex-shrink-0 bg-gray-50 p-3 rounded-md text-stone-950">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"

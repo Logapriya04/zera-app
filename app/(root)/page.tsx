@@ -4,16 +4,34 @@ import HeroSection from "../container/HeroSection";
 import Services from "../container/ServiceSection";
 import Testimonal from "../container/Testimonal";
 import AboutSection from "../container/AboutSection";
-import Contact from "../components/Contact";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import ValuesSection from "../container/ValuesSection";
-import CtaSection from "../container/ctaSection";
+import CtaSection from "../container/CtaSection";
 import TermSection from "../container/TermSection";
 import ContactSection from "../container/ContactSection";
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
+      <motion.div
+        id="scroll-indicator"
+        style={{
+          scaleX: scrollYProgress,
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: 10,
+          originX: 0,
+          backgroundColor: "#fff",
+        }}
+      />
+      <motion.button
+        whileHover={{ scale: 2 }}
+        animate={{ scale: 1, transition: { duration: 2 } }}
+      />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,7 +47,6 @@ export default function Home() {
       <TermSection />
       <CtaSection />
       <ContactSection />
-      <Contact />
 
       {/* <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">

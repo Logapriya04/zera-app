@@ -110,6 +110,22 @@ const Contact = () => {
                   </label>
                 </div>
 
+                  <div className="relative">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder=" "
+                      className="form-input w-full px-4 py-2  border-gray-300 dark:border-gray-600 shadow-sm shadow-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-gold"
+                      required
+                    />
+                    <label
+                      htmlFor="name"
+                      className="floating-label absolute left-4 top-2 text-gray-500 dark:text-gray-300 pointer-events-none"
+                    >
+                      Name
+                    </label>
+                  </div>
                 <div className="relative">
                   <input
                     type="email"

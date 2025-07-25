@@ -49,7 +49,7 @@ const AboutSection = () => {
             <div className="relative rounded-lg overflow-hidden">
               <img
                 className="w-full h-auto"
-                src="https://placehold.co/800x500"
+                src="./about-800x500.png"
                 alt="Diverse team collaborating in a modern office space with laptops and whiteboards"
               />
               <div className="absolute inset-0 bg-gold opacity-20"></div>

@@ -2,12 +2,21 @@ const website = {
   title: "Zerahaans - Empowering Growth Through Innovation",
   logo_path: "",
   name: "ZERAHAANS",
-  address: {
-    title: "Contact Information",
-    location: "Neyveli",
-    phoneNumber: "+91 7397323503",
-    emailId: "info@zerahaans.com",
-  },
+  address: [
+    {
+      logo: "Icon_mail.svg",
+      text: "info@zerahaans.com",
+    },
+    {
+      logo: "Icon_call.svg",
+      text: "+91 7397323603",
+    },
+    {
+      logo: "Icon_location.svg",
+      text: "Neyveli, Tamil Nadu, India",
+    },
+  ],
+
   socialAccount: {
     title: "Follow Us",
     accounts: [
@@ -29,7 +38,7 @@ const website = {
     ],
   },
 };
-
+//https://placehold.co/800x50
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "#about", label: "About" },

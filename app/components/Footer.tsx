@@ -1,43 +1,44 @@
 "use client";
 
-const footerData = {
-  title: "Zerahaans Enterprises",
-  content:
-    "Digital solutions for modern businesses. Helping you navigate the digital landscape with innovative technology.",
-  quickLinks: ["Home", "Services", "About us", "Contact"],
-  Legal: [
-    {
-      title: "Privacy Policy",
-      link: "",
-    },
-    {
-      title: "Terms of Service",
-      link: "",
-    },
-    {
-      title: "Cookie Policy",
-      link: "",
-    },
-  ],
-};
+import db from "../api/db";
+const footerData = db.footerData;
+const services = db.services.service;
+const quickLinks = db.navLinks;
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
+    <div className="bg-black text-white">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">{footerData.title}</h3>
             <p className="text-gray-400">{footerData.content}</p>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+              Services
+            </h3>
+            <ul className="mt-4 space-y-2">
+              {services.map((d, k) => (
+                <li key={k}>
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white text-sm"
+                  >
+                    {d.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {footerData.quickLinks.map((link, i) => (
-                <li key={i}>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    {link}
+              {quickLinks.map((d, k) => (
+                <li key={k}>
+                  <a href={d.href} className="text-gray-400 hover:text-white">
+                    {d.label}
                   </a>
                 </li>
               ))}
@@ -67,7 +68,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

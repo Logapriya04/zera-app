@@ -66,9 +66,9 @@ body {
 
 .hero-bg {
   /* linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
-  background: url("https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/af892816-647f-442b-9b25-09c46619b2d9.png")
-    no-repeat center center;
+  /* background: url("https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/af892816-647f-442b-9b25-09c46619b2d9.png")
+    no-repeat center center; */
 
-  /* background: url("../public/assets/backImage.jpg") no-repeat center center; */
+  background: url("../public/bg-image-1.png") no-repeat center center;
   background-size: cover;
 }
