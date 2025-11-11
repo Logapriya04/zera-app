@@ -1,7 +1,6 @@
 "use client";
 
 import db from "../api/db";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const services = {
