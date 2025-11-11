@@ -41,19 +41,17 @@ const website = {
 //https://placehold.co/800x50
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#skillZ", label: "SkillZ" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/skillZ", label: "SkillZ" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 const HeroItems = {
-  // heading: "Digital Solutions for Modern Businesses",
-  // Tailored solutions bridging corporate needs and individual growth since 2020.
   heading: "Empowering Growth",
   headColored: "Through Innovation",
   content:
-    "We help startups and enterprises build innovative digital products that drive growth and customer satisfaction.",
+    "Where corporate goals meet personal growth to create lasting impact.",
 };
 
 const clients = {
@@ -67,27 +65,63 @@ const clients = {
 };
 
 const AboutZera = {
-  title: "About Zerahaans",
-  subtitle: "Bridging the gap between corporate needs and individual growth",
+  title: "About Us",
+  subtitle: "Empowering Growth. Inspiring Excellence.",
   content:
-    "Founded in 2020, Zerahaans emerged with a clear vision to empower businesses and individuals alike.",
+    "Founded in 2023, Zerahaans was built on a clear vision — \
+    to bridge the gap between corporate needs and individual growth.",
+story: "From the beginning, we’ve focused on helping businesses complete \
+    their projects efficiently while empowering individuals to enhance \
+    their skills and unlock their potential.\n\n\
+    At Zerahaans, we believe true success comes from collaboration, innovation, and continuous\
+learning. Our commitment to excellence drives everything we do — from delivering business\
+solutions that produce real results to training programs that shape confident, capable\
+professionals.",
   about: [
-    {
-      title: "Our Journey",
-      content:
-        "Our journey began by assisting businesses in completing their \
-         projects efficiently and providing training to individuals eager \
-          to enhance their skills. We take pride in being a company that \
-          people love to work with, building lasting relationships with our \
-           clients and partners.",
-    },
     {
       title: "Our Mission",
       content:
-        "To empower businesses and individuals alike by delivering tailored \
-         solutions that cater to the unique challenges of each client and by \
-         offering training programs that equip individuals with the skills \
-          needed to thrive in today's dynamic environment.",
+        "To empower both businesses and individuals through tailored solutions and transformative\
+learning experiences.",
+    },
+    {
+      title: "We strive to:",
+      content:
+        "Deliver customized corporate services that enhance performance and productivity.\n\
+Offer skill development programs that prepare individuals to thrive in a fast-changing world",
+    },
+  ],
+  other: [
+    {
+      title: "Why Choose Zerahaans",
+
+      content: [
+        {
+          sub: "Client-Centric Approach",
+          detail:
+            "We start by understanding your unique goals and challenges, crafting solutions that align\
+perfectly with your needs.",
+        },
+        {
+          sub: "Expertise and Experience",
+          detail:
+            "Our diverse team of professionals brings a blend of knowledge, creativity, and real-world\
+experience to every project and training initiative.",
+        },
+        {
+          sub: "Commitment to Growth",
+          detail:
+            "We believe growth is a journey — for our clients, our learners, and our team. Through constant\
+innovation and learning, we ensure lasting impact.",
+        },
+      ],
+    },
+    {
+      title: "Our Promise",
+      content:
+        "At Zerahaans, we don’t just deliver results — we build relationships that inspire growth and\
+success. Whether you’re a business aiming to optimize operations or an individual ready to\
+advance your career, we’re here to help you achieve your goals with confidence.",
     },
   ],
   image: {
@@ -177,17 +211,6 @@ const services = {
       content:
         "Comprehensive support for startup planning, finance, compliance & leadership.",
       points: ["Business planning", "Financial management", "Legal compliance"],
-    },
-    {
-      title: "Trading & Investment",
-      logo: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
-      content:
-        "Market analysis, portfolio building, simulations, and mentorship for financial success.",
-      points: [
-        "Market analysis techniques",
-        "Portfolio building strategies",
-        "Real-world simulations",
-      ],
     },
   ],
 };
@@ -288,7 +311,6 @@ const contactDetails = {
         "Student Internships",
         "Technical Training",
         "Entrepreneurship",
-        "Trading & Investment",
         "Other",
       ],
       label: "Service Needed",
