@@ -4,7 +4,6 @@ import Image from "next/image";
 import db from "../api/db";
 import { motion } from "framer-motion";
 
-const contactDetails = db.contactDetails;
 const socialAccount = db.website.socialAccount;
 const address = db.website.address;
 
@@ -139,7 +138,6 @@ const ContactSection = () => {
                   <option>Student Internships</option>
                   <option>Technical Training</option>
                   <option>Entrepreneurship</option>
-                  <option>Trading & Investment</option>
                   <option>Other</option>
                 </select>
               </div>
