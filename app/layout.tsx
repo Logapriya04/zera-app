@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google"; // Removed Geist_Mono
 import "./globals.css";
 import Navbar from "./container/Navbar";
 import Footer from "./components/Footer";
@@ -11,12 +11,7 @@ export const metadata: Metadata = {
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["100","200","300","400","500","600","700","800","900"],
 });
 
 export default function RootLayout({
@@ -26,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className}  bg-gray-950 text-white`}>
+      <body className={`${poppins.className} bg-gray-950 text-white`}>
         <Navbar />
         {children}
         <Footer />
