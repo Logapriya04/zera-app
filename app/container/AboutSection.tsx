@@ -108,7 +108,7 @@ const AboutSection = () => {
           <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#FFD700" />
-              <stop offset="100%" stopColor="#FFB400" />
+              <stop offset="100%" stopColor="#0e0d0dff" />
             </linearGradient>
           </defs>
           <path
@@ -123,7 +123,7 @@ const AboutSection = () => {
           <defs>
             <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#FFD700" />
-              <stop offset="100%" stopColor="#FFB400" />
+              <stop offset="100%" stopColor="#0e0d0dff" />
             </linearGradient>
           </defs>
           <path
